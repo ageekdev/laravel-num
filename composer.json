@@ -1,5 +1,5 @@
 {
-    "name": "genie-fintech/laravel-num",
+    "name": "ageekdev/laravel-num",
     "description": "To convert the unicode digit to another unicode digit.",
     "keywords": [
         "laravel",
@@ -23,7 +23,7 @@
     },
     "require-dev": {
         "nunomaduro/collision": "^5.10|^6.1",
-        "nunomaduro/larastan": "^1.0|^2.0",
+        "nunomaduro/larastan": "2.1.12",
         "orchestra/testbench": "^6.23|^7.0",
         "pestphp/pest": "^1.21",
         "pestphp/pest-plugin-laravel": "^1.1",
@@ -33,7 +33,7 @@
     },
     "autoload": {
         "psr-4": {
-            "GenieFintech\\Num\\": "src/"
+            "AgeekDev\\Num\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -41,24 +41,29 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "GenieFintech\\Num\\Tests\\": "tests"
+            "AgeekDev\\Num\\Tests\\": "tests"
         }
     },
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse",
+        "analyse-clear": "vendor/bin/phpstan clear-result-cache",
         "test": "vendor/bin/pest",
         "test-coverage": "vendor/bin/pest --coverage"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": false,
+            "phpstan/extension-installer": false
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "GenieFintech\\Num\\NumServiceProvider"
+                "AgeekDev\\Num\\NumServiceProvider"
             ],
             "aliases": {
-                "Nrc": "GenieFintech\\Num\\Facades\\Num"
+                "Nrc": "AgeekDev\\Num\\Facades\\Num"
             }
         }
     },

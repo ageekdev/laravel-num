@@ -1,6 +1,6 @@
 <?php
 
-namespace GenieFintech\Num\Facades;
+namespace AgeekDev\Num\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Facade;
  * @method string toEnglish(string $string)
  * @method string toThai(string $string)
  *
- * @see \GenieFintech\Num\MyanFont
+ * @see \AgeekDev\Num\Num
  */
 class Num extends Facade
 {

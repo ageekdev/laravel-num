@@ -1,8 +1,8 @@
 <?php
 
-namespace GenieFintech\Num\Tests;
+namespace AgeekDev\Num\Tests;
 
-use GenieFintech\Num\NumServiceProvider;
+use AgeekDev\Num\NumServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra

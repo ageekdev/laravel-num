@@ -1,6 +1,6 @@
 <?php
 
-use GenieFintech\Num\Facades\Num;
+use AgeekDev\Num\Facades\Num;
 
 if (! function_exists('num_convert')) {
     /**
@@ -68,7 +68,7 @@ if (! function_exists('num_range')) {
         $_result = [];
 
         // get unicodes of start and end
-        list(, $_start) = unpack("N*", mb_convert_encoding($start, "UTF-32BE", "UTF-8"));
+        [, $_start] = unpack("N*", mb_convert_encoding($start, "UTF-32BE", "UTF-8"));
 
         $_end = $_start + 9;
 

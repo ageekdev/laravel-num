@@ -1,10 +1,10 @@
 <h1 align="center">Laravel Num</h1>
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/genie-fintech/laravel-num.svg?style=flat-square)](https://packagist.org/packages/genie-fintech/laravel-num)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/ageekdev/laravel-num.svg?style=flat-square)](https://packagist.org/packages/ageekdev/laravel-num)
 [![Laravel 8.x](https://img.shields.io/badge/Laravel-8.x-red.svg?style=flat-square)](http://laravel.com)
 [![Laravel 9.x](https://img.shields.io/badge/Laravel-9.x-red.svg?style=flat-square)](http://laravel.com)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/genie-fintech/laravel-num/run-tests?label=tests&style=flat-square)](https://github.com/genie-fintech/laravel-num/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/genie-fintech/laravel-num.svg?style=flat-square)](https://packagist.org/packages/genie-fintech/laravel-num)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/ageekdev/laravel-num/run-tests?label=tests&style=flat-square)](https://github.com/ageekdev/laravel-num/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/ageekdev/laravel-num.svg?style=flat-square)](https://packagist.org/packages/ageekdev/laravel-num)
 
 To convert the unicode digit to another unicode digit.
 
@@ -18,14 +18,14 @@ You can see more `zero unicode character` at [zero-unicode.md](zero-unicode.md).
 You can install this package via composer using this command:
 
 ```bash
-composer require genie-fintech/laravel-num
+composer require ageekdev/laravel-num
 ```
 
 The package will automatically register itself.
 
 Publish configuration and asset files
 ```bash
-php artisan vendor:publish --provider="GenieFintech\Num\NumServiceProvider"
+php artisan vendor:publish --provider="AgeekDev\Num\NumServiceProvider"
 ```
 
 ## Usage
@@ -82,7 +82,7 @@ The Laravel Num allows you to define "macros", which can serve as a fluent, expr
 To get started, you may define the macro within the boot method of your application's App\Providers\AppServiceProvider class:
 
 ```php
-use GenieFintech\Num\Facades\Num;
+use AgeekDev\Num\Facades\Num;
  
 /**
  * Bootstrap any application services.

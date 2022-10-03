@@ -1,6 +1,6 @@
 <?php
 
-namespace GenieFintech\Num\Tests;
+namespace AgeekDev\Num\Tests;
 
 trait DataTestHelper
 {

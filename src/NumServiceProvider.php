@@ -1,6 +1,6 @@
 <?php
 
-namespace GenieFintech\Num;
+namespace AgeekDev\Num;
 
 use Illuminate\Support\ServiceProvider;
 

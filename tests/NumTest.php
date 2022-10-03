@@ -1,6 +1,6 @@
 <?php
 
-use GenieFintech\Num\Facades\Num;
+use AgeekDev\Num\Facades\Num;
 use Illuminate\Support\Facades\Config;
 
 it('convert english to myanmar', function () {
