@@ -16,11 +16,11 @@ trait DataTestHelper
 
     protected function thaiNumber(): string
     {
-        return "๑๒๓๔๕๖๗๘๙๐";
+        return '๑๒๓๔๕๖๗๘๙๐';
     }
 
     protected function myanmarShanNumber(): string
     {
-        return "႑႒႓႔႕႖႗႘႙႐";
+        return '႑႒႓႔႕႖႗႘႙႐';
     }
 }

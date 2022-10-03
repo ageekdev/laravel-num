@@ -10,8 +10,7 @@ abstract class TestCase extends Orchestra
     use DataTestHelper;
 
     /**
-     * @param \Illuminate\Foundation\Application $app
-     *
+     * @param  \Illuminate\Foundation\Application  $app
      * @return array
      */
     protected function getPackageProviders($app): array

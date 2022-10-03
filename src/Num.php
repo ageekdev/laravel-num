@@ -13,10 +13,9 @@ class Num
     /**
      * Convert the number to another language.
      *
-     * @param int|string $string
-     * @param string $to
-     * @param string|null $from
-     *
+     * @param  int|string  $string
+     * @param  string  $to
+     * @param  string|null  $from
      * @return string
      * Supported Languages: "Myanmar", "English", "Thai"
      */
@@ -61,7 +60,7 @@ class Num
     /**
      * Convert to the myanmar number.
      *
-     * @param int|string $string
+     * @param  int|string  $string
      * @return string
      */
     public function toMyanmar(int|string $string): string
@@ -72,7 +71,7 @@ class Num
     /**
      * Convert to the thai number.
      *
-     * @param int|string $string
+     * @param  int|string  $string
      * @return string
      */
     public function toThai(int|string $string): string
@@ -83,7 +82,7 @@ class Num
     /**
      * Convert to the english number.
      *
-     * @param int|string $string
+     * @param  int|string  $string
      * @return string
      */
     public function toEnglish(int|string $string): string
