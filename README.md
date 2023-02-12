@@ -1,9 +1,10 @@
 <h1 align="center">Laravel Num</h1>
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ageekdev/laravel-num.svg?style=flat-square)](https://packagist.org/packages/ageekdev/laravel-num)
-[![Laravel 8.x](https://img.shields.io/badge/Laravel-8.x-red.svg?style=flat-square)](http://laravel.com)
-[![Laravel 9.x](https://img.shields.io/badge/Laravel-9.x-red.svg?style=flat-square)](http://laravel.com)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/ageekdev/laravel-num/run-tests?label=tests&style=flat-square)](https://github.com/ageekdev/laravel-num/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![Laravel 8.x](https://img.shields.io/badge/Laravel-8.x-red.svg?style=flat-square)](https://laravel.com/docs/8.x)
+[![Laravel 9.x](https://img.shields.io/badge/Laravel-9.x-red.svg?style=flat-square)](https://laravel.com/docs/9.x)
+[![Laravel 10.x](https://img.shields.io/badge/Laravel-10.x-red.svg?style=flat-square)](http://laravel.com)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/ageekdev/laravel-num/run-tests.yml?label=tests&style=flat-square)](https://github.com/ageekdev/laravel-num/actions/workflows/run-tests.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/ageekdev/laravel-num.svg?style=flat-square)](https://packagist.org/packages/ageekdev/laravel-num)
 
 To convert the unicode digit to another unicode digit.
@@ -135,6 +136,11 @@ Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 ## Security Vulnerabilities
 
 Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
+
+## Credits
+
+- [Tint Naing Win](https://github.com/tintnaingwinn)
+- [All Contributors](../../contributors)
 
 ## License
 
