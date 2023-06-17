@@ -2,6 +2,15 @@
 
 All notable changes to `laravel-num` will be documented in this file
 
+## v1.1.1 - 2023-06-17
+
+### Changed
+
+- Improve Tests
+- Improve Github actions
+- Improve git attributes
+- Improve code
+
 ## v1.1.0 - 2023-02-12
 
 ### Added
