@@ -1,17 +1,21 @@
 <?php
 
 it('convert english to myanmar', function () {
-    $this->assertSame($this->myanmarNumber(), num_convert($this->englishNumber(), 'mm', 'en'));
+    expect(num_convert($this->englishNumber(), 'mm', 'en'))
+        ->toEqual($this->myanmarNumber());
 });
 
 it('convert to myanmar ', function () {
-    $this->assertSame($this->myanmarNumber(), num_to_mm($this->englishNumber()));
+    expect(num_to_mm($this->englishNumber()))
+        ->toEqual($this->myanmarNumber());
 });
 
 it('convert to thai', function () {
-    $this->assertSame($this->thaiNumber(), num_to_th($this->englishNumber()));
+    expect(num_to_th($this->englishNumber()))
+        ->toEqual($this->thaiNumber());
 });
 
 it('convert to english', function () {
-    $this->assertSame($this->englishNumber(), num_to_eng($this->thaiNumber()));
+    expect(num_to_eng($this->thaiNumber()))
+        ->toEqual($this->englishNumber());
 });
