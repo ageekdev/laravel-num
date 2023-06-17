@@ -6,12 +6,7 @@ if (! function_exists('num_convert')) {
     /**
      * Convert the number to another language.
      *
-     * @param  int|string  $string
-     * @param  string  $to
-     * @param  string|null  $from
-     *
      * Support Language: "Myanmar", "English", "Thai"
-     * @return string
      */
     function num_convert(int|string $string, string $to = 'en', string $from = null): string
     {
@@ -21,9 +16,6 @@ if (! function_exists('num_convert')) {
 if (! function_exists('num_to_mm')) {
     /**
      * Convert the number to Myanmar language.
-     *
-     * @param  int|string  $string
-     * @return string
      */
     function num_to_mm(int|string $string): string
     {
@@ -34,9 +26,6 @@ if (! function_exists('num_to_mm')) {
 if (! function_exists('num_to_th')) {
     /**
      * Convert the number to Thai language.
-     *
-     * @param  int|string  $string
-     * @return string
      */
     function num_to_th(int|string $string): string
     {
@@ -47,9 +36,6 @@ if (! function_exists('num_to_th')) {
 if (! function_exists('num_to_eng')) {
     /**
      * Convert the number to English language.
-     *
-     * @param  int|string  $string
-     * @return string
      */
     function num_to_eng(int|string $string): string
     {
@@ -60,9 +46,6 @@ if (! function_exists('num_to_eng')) {
 if (! function_exists('num_range')) {
     /**
      * Range of unicode numbers
-     *
-     * @param  string  $start
-     * @return array
      */
     function num_range(string $start): array
     {
