@@ -2,6 +2,12 @@
 
 All notable changes to `laravel-num` will be documented in this file
 
+## v1.2.1 - 2023-09-17
+
+### Added
+
+- Allow NULL as valid parameter
+
 ## v1.2.0 - 2023-09-14
 
 ### Changed
