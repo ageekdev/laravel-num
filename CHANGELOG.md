@@ -2,6 +2,13 @@
 
 All notable changes to `laravel-num` will be documented in this file
 
+## v1.2.0 - 2023-09-14
+
+### Changed
+
+- Drop support for Laravel  8.
+- Bump actions/checkout from 3 to 4
+
 ## v1.1.1 - 2023-06-17
 
 ### Changed
