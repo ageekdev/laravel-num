@@ -92,7 +92,7 @@ use AgeekDev\Num\Facades\Num;
  */
 public function boot()
 {
-    Num::macro('toMyanmarShan', function (int|string $string, string $from = null) {
+    Num::macro('toMyanmarShan', function (int|string|null $string, string $from = null) {
         return Num::convert($string, 'shan', $from);
     });
 }

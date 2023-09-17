@@ -8,7 +8,7 @@ if (! function_exists('num_convert')) {
      *
      * Support Language: "Myanmar", "English", "Thai"
      */
-    function num_convert(int|string $string, string $to = 'en', string $from = null): string
+    function num_convert(int|string|null $string, string $to = 'en', string $from = null): ?string
     {
         return Num::convert($string, $to, $from);
     }
@@ -17,7 +17,7 @@ if (! function_exists('num_to_mm')) {
     /**
      * Convert the number to Myanmar language.
      */
-    function num_to_mm(int|string $string): string
+    function num_to_mm(int|string|null $string): ?string
     {
         return Num::toMyanmar($string);
     }
@@ -27,7 +27,7 @@ if (! function_exists('num_to_th')) {
     /**
      * Convert the number to Thai language.
      */
-    function num_to_th(int|string $string): string
+    function num_to_th(int|string|null $string): ?string
     {
         return Num::toThai($string);
     }
@@ -37,7 +37,7 @@ if (! function_exists('num_to_eng')) {
     /**
      * Convert the number to English language.
      */
-    function num_to_eng(int|string $string): string
+    function num_to_eng(int|string|null $string): ?string
     {
         return Num::toEnglish($string);
     }

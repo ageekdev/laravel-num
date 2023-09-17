@@ -15,8 +15,12 @@ class Num
      *
      * Supported Languages: "Myanmar", "English", "Thai"
      */
-    public function convert(int|string $string, string $to = 'en', string $from = null): string
+    public function convert(int|string|null $string, string $to = 'en', string $from = null): ?string
     {
+        if ($string === null || $string === '') {
+            return $string;
+        }
+
         $zeros = config('num.zeros');
 
         if (Arr::has($zeros, $to)) {
@@ -29,7 +33,7 @@ class Num
 
         unset($zeros[$to]);
 
-        if ($from != null) {
+        if ($from !== null) {
             if (Arr::has($zeros, $from)) {
                 $fromZero = $zeros[$from];
             } else {
@@ -56,7 +60,7 @@ class Num
     /**
      * Convert to the myanmar number.
      */
-    public function toMyanmar(int|string $string): string
+    public function toMyanmar(int|string|null $string): ?string
     {
         return $this->convert($string, 'mm');
     }
@@ -64,7 +68,7 @@ class Num
     /**
      * Convert to the thai number.
      */
-    public function toThai(int|string $string): string
+    public function toThai(int|string|null $string): ?string
     {
         return $this->convert($string, 'th');
     }
@@ -72,7 +76,7 @@ class Num
     /**
      * Convert to the english number.
      */
-    public function toEnglish(int|string $string): string
+    public function toEnglish(int|string|null $string): ?string
     {
         return $this->convert($string);
     }

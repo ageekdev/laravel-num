@@ -5,10 +5,10 @@ namespace AgeekDev\Num\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static string convert(int|string $string, string $to = 'en' , string $from = null)
- * @method static string toMyanmar(string $string)
- * @method static string toEnglish(string $string)
- * @method static string toThai(string $string)
+ * @method static string|null convert(int|string|null $string, string $to = 'en' , string $from = null)
+ * @method static string|null toMyanmar(int|string|null $string)
+ * @method static string|null toEnglish(int|string|null $string)
+ * @method static string|null toThai(int|string|null $string)
  *
  * @see \AgeekDev\Num\Num
  */
