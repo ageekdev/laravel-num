@@ -15,7 +15,7 @@ class Num
      *
      * Supported Languages: "Myanmar", "English", "Thai"
      */
-    public function convert(int|string|null $string, string $to = 'en', string $from = null): ?string
+    public function convert(int|string|null $string, string $to = 'en', ?string $from = null): ?string
     {
         if ($string === null || $string === '') {
             return $string;

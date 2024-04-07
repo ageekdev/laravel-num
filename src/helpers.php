@@ -8,7 +8,7 @@ if (! function_exists('num_convert')) {
      *
      * Support Language: "Myanmar", "English", "Thai"
      */
-    function num_convert(int|string|null $string, string $to = 'en', string $from = null): ?string
+    function num_convert(int|string|null $string, string $to = 'en', ?string $from = null): ?string
     {
         return Num::convert($string, $to, $from);
     }

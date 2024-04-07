@@ -8,20 +8,31 @@ on:
 
 jobs:
     phpstan:
-        name: phpstan
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-22.04
+
+        strategy:
+            fail-fast: true
+
+        name: Static Analysis
+
         steps:
-            - uses: actions/checkout@v4
+            - name: Check out repository code
+              uses: actions/checkout@v4
 
             - name: Setup PHP
               uses: shivammathur/setup-php@v2
               with:
-                  php-version: '8.2'
+                  php-version: 8.2
+                  tools: composer:v2
                   coverage: none
 
             - name: Install composer dependencies
-              uses: ramsey/composer-install@v3
+              uses: nick-fields/retry@v2
+              with:
+                  timeout_minutes: 3
+                  max_attempts: 5
+                  command: composer update --prefer-stable --prefer-dist --no-interaction --no-progress
 
             - name: Run PHPStan
               timeout-minutes: 2
-              run: ./vendor/bin/phpstan --error-format=github
+              run: ./vendor/bin/phpstan analyse --error-format=github

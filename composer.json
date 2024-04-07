@@ -18,19 +18,18 @@
         }
     ],
     "require": {
-        "php": "^8.0|^8.1|^8.2",
-        "illuminate/support": "^9.0|^10.0"
+        "php": "^8.1",
+        "illuminate/support": "^9.0|^10.0|^11.0"
     },
     "require-dev": {
         "laravel/pint": "^1.5",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
-        "nunomaduro/collision": "^5.11|^6.2|^7.0",
-        "nunomaduro/larastan": "^2.0",
-        "orchestra/testbench": "^7.6|^8.0",
+        "larastan/larastan": "^2.0",
+        "orchestra/testbench": "^7.31|^8.11|^9.0",
         "pestphp/pest": "^1.21|^2.0",
-        "pestphp/pest-plugin-laravel": "^1.2|^2.0",
+        "pestphp/pest-plugin-laravel": "^1.4|^2.0",
         "roave/security-advisories": "dev-latest"
     },
     "autoload": {
