@@ -2,6 +2,12 @@
 
 All notable changes to `laravel-num` will be documented in this file
 
+## v1.3.0 - 2024-04-07
+
+### Added
+
+- Support laravel 11.x
+
 ## v1.2.1 - 2023-09-17
 
 ### Added
