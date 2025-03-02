@@ -18,7 +18,7 @@ class NumServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/num.php', 'num');
 
         $this->app->singleton('num', function ($app) {
-            return new Num();
+            return new Num;
         });
     }
 }

@@ -8,7 +8,7 @@ on:
 
 jobs:
     phpstan:
-        runs-on: ubuntu-22.04
+        runs-on: ubuntu-latest
 
         strategy:
             fail-fast: true
@@ -22,12 +22,12 @@ jobs:
             - name: Setup PHP
               uses: shivammathur/setup-php@v2
               with:
-                  php-version: 8.2
+                  php-version: 8.4
                   tools: composer:v2
                   coverage: none
 
             - name: Install composer dependencies
-              uses: nick-fields/retry@v2
+              uses: nick-fields/retry@v3
               with:
                   timeout_minutes: 3
                   max_attempts: 5
