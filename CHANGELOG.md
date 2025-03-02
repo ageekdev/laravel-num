@@ -2,6 +2,12 @@
 
 All notable changes to `laravel-num` will be documented in this file
 
+## v1.4.0 - 2025-03-02
+
+- Support laravel 12.x
+
+**Full Changelog**: https://github.com/ageekdev/laravel-num/compare/v1.3.0...v1.4.0
+
 ## v1.3.0 - 2024-04-07
 
 ### Added
