@@ -2,6 +2,16 @@
 
 All notable changes to `laravel-num` will be documented in this file
 
+## v2.0.0 - 2026-03-21
+
+### What's Changed
+
+* Support  Laravel 13.x by @tintnaingwin in https://github.com/ageekdev/laravel-num/pull/16
+* Drop Laravel 9, 10, and 10 support.
+* Drop support < PHP 8.2
+
+**Full Changelog**: https://github.com/ageekdev/laravel-num/compare/v1.4.0...v2.0.0
+
 ## v1.4.0 - 2025-03-02
 
 - Support laravel 12.x
