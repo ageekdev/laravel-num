@@ -2,7 +2,6 @@
 
 namespace AgeekDev\Num;
 
-use Illuminate\Support\Arr;
 use Illuminate\Support\Traits\Macroable;
 use InvalidArgumentException;
 
@@ -33,7 +32,7 @@ class Num
 
         $zeros = config('num.zeros');
 
-        if (! Arr::has($zeros, $to)) {
+        if (! array_key_exists($to, $zeros)) {
             throw new InvalidArgumentException("Target language [{$to}] is not configured in num.zeros config.");
         }
 
@@ -41,15 +40,17 @@ class Num
         $toNumber = num_range($toZero);
 
         if ($from !== null) {
-            if (! Arr::has($zeros, $from)) {
+            if (! array_key_exists($from, $zeros)) {
                 throw new InvalidArgumentException("Source language [{$from}] is not configured in num.zeros config.");
             }
 
             return $this->replaceNumber((string) $string, $zeros[$from], $toNumber);
         }
 
+        unset($zeros[$to]);
+
         $result = (string) $string;
-        foreach (Arr::except($zeros, $to) as $zero) {
+        foreach ($zeros as $zero) {
             $result = $this->replaceNumber($result, $zero, $toNumber);
         }
 
