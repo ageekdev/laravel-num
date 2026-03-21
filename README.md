@@ -1,9 +1,6 @@
 <h1 align="center">Laravel Num</h1>
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ageekdev/laravel-num.svg?style=flat-square)](https://packagist.org/packages/ageekdev/laravel-num)
-[![Laravel 9.x](https://img.shields.io/badge/Laravel-9.x-red.svg?style=flat-square)](https://laravel.com/docs/9.x)
-[![Laravel 10.x](https://img.shields.io/badge/Laravel-10.x-red.svg?style=flat-square)](https://laravel.com/docs/10.x)
-[![Laravel 11.x](https://img.shields.io/badge/Laravel-11.x-red.svg?style=flat-square)](https://laravel.com/docs/11.x)
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg?style=flat-square)](https://laravel.com/docs/12.x)
 [![Laravel 13.x](https://img.shields.io/badge/Laravel-13.x-red.svg?style=flat-square)](https://laravel.com/docs/13.x)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/ageekdev/laravel-num/run-tests.yml?label=tests&style=flat-square)](https://github.com/ageekdev/laravel-num/actions/workflows/run-tests.yml)
